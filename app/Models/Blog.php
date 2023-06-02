@@ -16,6 +16,7 @@ class Blog extends Model
         'locations',
         'location_url',
         'image',
+        'status'
     ];
     
 }
