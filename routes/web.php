@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -35,7 +36,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::group(['prefix' => '/admin'], function () {
+        Route::apiResource('/blog-categories', BlogCategoryController::class);
         Route::apiResource('/blogs', BlogController::class);
+        Route::get('/blog/create', [BlogController::class, 'create'])->name('blogs.create');
         Route::apiResource('/destinations', BlogController::class);
         Route::apiResource('/events', BlogController::class);
     });

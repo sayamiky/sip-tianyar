@@ -149,6 +149,9 @@
                         <li><a href="{{ route('dashboard') }}"><i class="list-icon feather feather-command"></i>
                                 <span class="hide-menu">Dashboard</span></a>
                         </li>
+                        <li><a href="{{ route('blog-categories.index') }}"><i class="list-icon feather feather-briefcase"></i>
+                                <span class="hide-menu">Blog Category</span></a>
+                        </li>
                         <li><a href="{{ route('blogs.index') }}"><i class="list-icon feather feather-briefcase"></i>
                                 <span class="hide-menu">Blog</span></a>
                         </li>

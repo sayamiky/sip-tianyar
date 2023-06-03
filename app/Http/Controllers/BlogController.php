@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\BlogCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -14,7 +15,7 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = Blog::where('status', 1)->get();
-        return view('blogs.index', compact('blogs'));
+        return view('admin.blog.index', compact('blogs'));
     }
 
     /**
@@ -22,7 +23,8 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        $categories = BlogCategory::all();
+        return view('admin.blog.create', compact('categories'));
     }
 
     /**
@@ -41,7 +43,7 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        return view('blog.editBlog', ['blogs' => $blog]);
+        return view('admin.blog.edit', ['blogs' => $blog]);
     }
 
     /**
