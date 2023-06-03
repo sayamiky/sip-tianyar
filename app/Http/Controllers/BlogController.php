@@ -32,18 +32,31 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        $blog = Blog::create(array_merge($request->validated(), [
+        
+        $data = $request->validate([
+            'name' => 'string|required',
+            'blog_category_id' => 'required|numeric',
+            'description' => 'string|required',
+            'locations' => 'string|required',
+            'location_url' => 'string|required',
+            'image' => 'mimetypes:image/jpg,image/png,image/jpeg|required|max:5000',
+            'status' => 'numeric|required'
+        ]);
+
+        Blog::create(array_merge($data, [
             'image' => Storage::disk('local')->putFile('article', $request['image']),
         ]));
-        return redirect('blogs.index')->with('success', 'Data save successfully');
+
+        return redirect()->route('blogs.index')->with('success', 'Data save successfully');
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Blog $blog)
+    public function show(Blog $blog)
     {
-        return view('admin.blog.edit', ['blogs' => $blog]);
+        $categories = BlogCategory::all();
+        return view('admin.blog.edit', compact('blog','categories'));
     }
 
     /**
@@ -51,11 +64,21 @@ class BlogController extends Controller
      */
     public function update(Request $request, Blog $blog)
     {
-        tap($blog)->update(array_merge($request->validated(), [
+        $data = $request->validate([
+            'name' => 'string|required',
+            'blog_category_id' => 'required|numeric',
+            'description' => 'string|required',
+            'locations' => 'string|required',
+            'location_url' => 'string|required',
+            'image' => 'mimetypes:image/jpg,image/png,image/jpeg|sometimes|max:5000',
+            'status' => 'numeric|required'
+        ]);
+
+        tap($blog)->update(array_merge($data, [
             'image' => $request->image != null ? Storage::disk('local')->putFile('article', $request['image']) : $blog->image
         ]));
 
-        return redirect('blogs.index')->with('success', 'Data update successfully');
+        return redirect()->route('blogs.index')->with('success', 'Data update successfully');
     }
 
     /**
@@ -64,6 +87,6 @@ class BlogController extends Controller
     public function destroy(Blog $blog)
     {
         $blog->delete();
-        return redirect('blogs.index')->with('success', 'Data delete successfully');
+        return redirect()->route('blogs.index')->with('success', 'Data delete successfully');
     }
 }

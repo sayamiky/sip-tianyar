@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/logo-collapses.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/pace.css') }}">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Stock Management</title>
+    <title>Sistem Informasi Pariwisata</title>
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600%7CRoboto:400" rel="stylesheet"
         type="text/css">
@@ -149,7 +149,8 @@
                         <li><a href="{{ route('dashboard') }}"><i class="list-icon feather feather-command"></i>
                                 <span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li><a href="{{ route('blog-categories.index') }}"><i class="list-icon feather feather-briefcase"></i>
+                        <li><a href="{{ route('blog-categories.index') }}"><i
+                                    class="list-icon feather feather-folder"></i>
                                 <span class="hide-menu">Blog Category</span></a>
                         </li>
                         <li><a href="{{ route('blogs.index') }}"><i class="list-icon feather feather-briefcase"></i>
@@ -224,6 +225,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/multi-select/0.9.12/js/jquery.multi-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.6.4/tinymce.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.6.4/themes/inlite/theme.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.6.4/jquery.tinymce.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-wysiwyg/0.3.3/bootstrap3-wysihtml5.all.min.js"></script>
     <script src="{{ asset('assets/js/theme.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
 </body>

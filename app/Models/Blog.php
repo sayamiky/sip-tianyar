@@ -12,6 +12,7 @@ class Blog extends Model
     protected $table = "blogs";
     protected $fillable = [
         'name',
+        'blog_category_id',
         'description',
         'locations',
         'location_url',
@@ -21,6 +22,6 @@ class Blog extends Model
 
     public function category()
     {
-        return $this->belongsTo(BlogCategory::class);
+        return $this->belongsTo(BlogCategory::class, 'blog_category_id');
     }
 }

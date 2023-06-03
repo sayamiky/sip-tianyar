@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,7 +40,8 @@ Route::middleware('auth')->group(function () {
         Route::apiResource('/blog-categories', BlogCategoryController::class);
         Route::apiResource('/blogs', BlogController::class);
         Route::get('/blog/create', [BlogController::class, 'create'])->name('blogs.create');
-        Route::apiResource('/destinations', BlogController::class);
+        Route::apiResource('/destinations', DestinationController::class);
+        Route::get('/destination/create', [DestinationController::class, 'create'])->name('destinations.create');
         Route::apiResource('/events', BlogController::class);
     });
 });

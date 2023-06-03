@@ -6,7 +6,7 @@
         <div class="row page-title clearfix">
             <div class="page-title-left">
                 <h6 class="page-title-heading mr-0 mr-r-5">Form Create</h6>
-                <p class="page-title-description mr-0 d-none d-md-inline-block">Product</p>
+                <p class="page-title-description mr-0 d-none d-md-inline-block">Blog</p>
             </div>
             <!-- /.page-title-left -->
             <div class="page-title-right d-none d-sm-inline-flex">
@@ -36,20 +36,20 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <label for="l30">Product Name</label>
-                                            <input class="form-control @error('product_name') is-invalid @enderror"
-                                                type="text" id="product_name" name="product_name"
-                                                placeholder="Type product name" value="{{ old('product_name') }}">
-                                            @if ($errors->has('product_name'))
+                                            <label for="l30">Title</label>
+                                            <input class="form-control @error('name') is-invalid @enderror" type="text"
+                                                id="name" name="name" placeholder="Type title"
+                                                value="{{ old('name') }}">
+                                            @if ($errors->has('name'))
                                                 <div class="invalid-feedback">
-                                                    {{ $errors->first('product_name') }}
+                                                    {{ $errors->first('name') }}
                                                 </div>
                                             @endif
                                         </div>
                                         <div class="form-group">
                                             <label for="l38">Category</label>
                                             <div class="col-md-12">
-                                                <select name="category_id" id="category_id" class="form-control">
+                                                <select name="blog_category_id" id="blog_category_id" class="form-control">
                                                     @foreach ($categories as $category)
                                                         <option value="{{ $category->id }}">{{ $category->category_name }}
                                                         </option>
@@ -60,57 +60,44 @@
                                         <div class="row">
                                             <div class="col-lg-4">
                                                 <div class="form-group">
-                                                    <label for="l38">Weight</label>
-                                                    <input class="form-control @error('weight') is-invalid @enderror"
-                                                        type="text" id="weight" name="weight"
-                                                        placeholder="Type product weight" value="{{ old('weight') }}">
-                                                    @if ($errors->has('weight'))
+                                                    <label for="l38">locations</label>
+                                                    <input class="form-control @error('locations') is-invalid @enderror"
+                                                        type="text" id="locations" name="locations"
+                                                        placeholder="Type locations" value="{{ old('locations') }}">
+                                                    @if ($errors->has('locations'))
                                                         <div class="invalid-feedback">
-                                                            {{ $errors->first('weight') }}
+                                                            {{ $errors->first('locations') }}
                                                         </div>
                                                     @endif
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-8">
                                                 <div class="form-group">
-                                                    <label for="l38">Price</label>
-                                                    <input class="form-control @error('price') is-invalid @enderror"
-                                                        type="text" id="price" name="price"
-                                                        placeholder="Type product price" value="{{ old('price') }}">
-                                                    @if ($errors->has('price'))
+                                                    <label for="l38">location url</label>
+                                                    <input class="form-control @error('location_url') is-invalid @enderror"
+                                                        type="text" id="location_url" name="location_url"
+                                                        placeholder="Type url location" value="{{ old('location_url') }}">
+                                                    @if ($errors->has('location_url'))
                                                         <div class="invalid-feedback">
-                                                            {{ $errors->first('price') }}
-                                                        </div>
-                                                    @endif
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form-group">
-                                                    <label for="l38">Unit</label>
-                                                    <input class="form-control @error('pcs') is-invalid @enderror"
-                                                        type="text" id="pcs" name="pcs"
-                                                        placeholder="Type product pcs" value="{{ old('pcs') }}">
-                                                    @if ($errors->has('pcs'))
-                                                        <div class="invalid-feedback">
-                                                            {{ $errors->first('pcs') }}
+                                                            {{ $errors->first('location_url') }}
                                                         </div>
                                                     @endif
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for="l38">Description</label>
-                                            <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description"
-                                                rows="3" value="{{ old('description') }}" placeholder="Type product description"></textarea>
-                                            @if ($errors->has('description'))
-                                                <div class="invalid-feedback">
-                                                    {{ $errors->first('description') }}
-                                                </div>
-                                            @endif
+                                        <div class="col-md-12 widget-holder">
+                                            <div class="widget-bg">
+                                                <h5 class="box-title mr-b-0">Description</h5>
+                                                <textarea data-toggle="wysiwyg" id="description" name="description">{{ old('description') }}</textarea>
+                                                @if ($errors->has('description'))
+                                                    <div class="invalid-feedback">
+                                                        {{ $errors->first('description') }}
+                                                    </div>
+                                                @endif
+                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="l39">Product Image</label>
+                                            <label for="l39">Image</label>
                                             <br>
                                             <input class="form-control @error('image') is-invalid @enderror" id="image"
                                                 name="image" type="file">
@@ -120,6 +107,19 @@
                                                     {{ $errors->first('image') }}
                                                 </div>
                                             @endif
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="l38">status</label>
+                                                <input class="form-control @error('status') is-invalid @enderror"
+                                                    type="text" id="url_location" name="status"
+                                                    placeholder="Type status" value="{{ old('status') }}">
+                                                @if ($errors->has('status'))
+                                                    <div class="invalid-feedback">
+                                                        {{ $errors->first('status') }}
+                                                    </div>
+                                                @endif
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

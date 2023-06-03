@@ -4,7 +4,7 @@
         <!-- Page Title Area -->
         <div class="row page-title clearfix">
             <div class="page-title-left">
-                <h6 class="page-title-heading mr-0 mr-r-5">Blog</h6>
+                <h6 class="page-title-heading mr-0 mr-r-5">Destination</h6>
                 <p class="page-title-description mr-0 d-none d-md-inline-block">statistics, charts and events</p>
             </div>
             <!-- /.page-title-left -->
@@ -12,7 +12,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a>
                     </li>
-                    <li class="breadcrumb-item active">Blog</li>
+                    <li class="breadcrumb-item active">Destination</li>
                 </ol>
             </div>
             <!-- /.page-title-right -->
@@ -28,9 +28,9 @@
                     <div class="widget-bg">
                         <div class="widget-heading clearfix">
                             <h5></h5>
-                            <a href="{{ route('blogs.create') }}">
+                            <a href="{{ route('destinations.create') }}">
                                 <button type="button" class="btn btn-sm btn-primary ripple" data-toggle="modal"
-                                    data-target=""><i class="social-icons list-icon">addme</i> Add Blog</button>
+                                    data-target=""><i class="social-icons list-icon">addme</i> Add Destination</button>
                             </a>
                             <!-- Add category Modal -->
                             <div id="login-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"
@@ -133,30 +133,24 @@
                                 <thead>
                                     <tr>
                                         <th>Title</th>
-                                        <th>Category</th>
                                         <th>Description</th>
                                         <th>Location</th>
                                         <th>Location Url</th>
-                                        <th>Image</th>
-                                        <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($blogs as $blog)
+                                    @foreach ($destinations as $destination)
                                         <tr>
-                                            <td>{{ $blog->name }}</td>
-                                            <td>{{ $blog->category->category_name }}</td>
-                                            <td>{{ Str::limit($blog->description, 100) }}</td>
-                                            <td>{{ $blog->locations }}</td>
-                                            <td>{{ $blog->location_url }}</td>
-                                            <td><img src="{{ asset('storage/'.$blog->image) }}" alt=""></td>
-                                            <td>{{ $blog->status == 1 ? 'active' : 'off' }}</td>
+                                            <td>{{ $destination->name }}</td>
+                                            <td>{{ Str::limit($destination->description, 100) }}</td>
+                                            <td>{{ $destination->locations }}</td>
+                                            <td>{{ $destination->location_url }}</td>
                                             <td style="white-space: nowrap; width: 1%;">
                                                 <div class="btn-group btn-group-sm" role="group">
-                                                    <form action="{{ route('blogs.destroy', $blog->id) }}"
+                                                    <form action="{{ route('destinations.destroy', $destination->id) }}"
                                                         method="POST">
-                                                        <a href="{{ route('blogs.show', $blog->id) }}">
+                                                        <a href="{{ route('destinations.show', $destination->id) }}">
                                                             <button type="button"
                                                                 class="btn btn-sm btn-primary-outline"><i
                                                                     class="list-icon fa fa-edit" data-toggle="modal"

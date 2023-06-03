@@ -5,7 +5,7 @@
         <div class="row page-title clearfix">
             <div class="page-title-left">
                 <h6 class="page-title-heading mr-0 mr-r-5">Category</h6>
-                <p class="page-title-description mr-0 d-none d-md-inline-block">product</p>
+                <p class="page-title-description mr-0 d-none d-md-inline-block">blog</p>
             </div>
             <!-- /.page-title-left -->
             <div class="page-title-right d-none d-sm-inline-flex">
@@ -47,12 +47,14 @@
                                                 @csrf
                                                 <div class="form-group mr-b-10">
                                                     <label for="emailaddress1">Category name</label>
-                                                    <input class="form-control @error('category_name') is-invalid @enderror" type="text" id="category_name"
-                                                        name="category_name" placeholder="Type your category name"
+                                                    <input class="form-control @error('category_name') is-invalid @enderror"
+                                                        type="text" id="category_name" name="category_name"
+                                                        placeholder="Type your category name"
                                                         value="{{ old('category_name') }}"
                                                         data-validation="{{ $errors->has('category_name') ? 'has-error' : '' }}">
                                                     @if ($errors->has('category_name'))
-                                                        <div class="invalid-feedback">{{ $errors->first('category_name') }}</div>
+                                                        <div class="invalid-feedback">{{ $errors->first('category_name') }}
+                                                        </div>
                                                     @endif
                                                 </div>
                                                 <div class="modal-footer">
@@ -75,8 +77,8 @@
                             @if (session('success'))
                                 <div class="alert alert-icon alert-success border-success alert-dismissible fade show"
                                     role="alert">
-                                    <button type="button" class="close" data-dismiss="alert"
-                                        aria-label="Close"><span aria-hidden="true">×</span>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                            aria-hidden="true">×</span>
                                     </button> <i class="material-icons list-icon">check_circle</i> <strong>Well
                                         done!</strong> {{ session('success') }}
                                 </div>
@@ -84,11 +86,11 @@
                             @if (!$errors->isEmpty())
                                 <div class="alert alert-icon alert-danger border-danger alert-dismissible fade show"
                                     role="alert">
-                                    <button type="button" class="close" data-dismiss="alert"
-                                        aria-label="Close"><span aria-hidden="true">×</span>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                            aria-hidden="true">×</span>
                                     </button> <i class="material-icons list-icon">not_interested</i>
                                     <strong>Oh
-                                        snap!</strong> {{$errors->first()}}
+                                        snap!</strong> {{ $errors->first() }}
                                 </div>
                             @endif
 
@@ -106,7 +108,8 @@
                                             <td>{{ $data->category_name }}</td>
                                             <td style="white-space: nowrap; width: 1%;">
                                                 <div class="btn-group btn-group-sm" role="group">
-                                                    <form action="{{ route('blog-categories.destroy', $data->id) }}" method="POST">
+                                                    <form action="{{ route('blog-categories.destroy', $data->id) }}"
+                                                        method="POST">
                                                         <a href="{{ route('blog-categories.show', $data->id) }}">
                                                             <button type="button" class="btn btn-sm btn-primary-outline"><i
                                                                     class="list-icon fa fa-edit" data-toggle="modal"
