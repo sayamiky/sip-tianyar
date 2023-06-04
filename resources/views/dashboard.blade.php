@@ -40,13 +40,13 @@
         <!-- Different data widgets ============ -->
         <!-- =================================== -->
         <div class="widget-list row">
-            <div class="widget-holder widget-sm col-md-6 widget-full-height">
+            <div class="widget-holder widget-sm col-md-4 widget-full-height">
                 <div class="widget-bg">
                     <div class="widget-body">
                         <div class="counter-w-info media">
                             <div class="media-body">
-                                <p class="text-muted mr-b-5">Product</p>
-                                <span class="counter-title color-primary"><span class="counter">11</span> </span>
+                                <p class="text-muted mr-b-5">Blog</p>
+                                <span class="counter-title color-primary"><span class="counter">{{$blog}}</span> </span>
                                 <!-- /.counter-title --> 
                                 {{-- <span class="counter-difference text-success"><i class="feather feather-arrow-up"></i> 23%</span> --}}
                                 <div class="mr-t-20">
@@ -67,18 +67,41 @@
                 <!-- /.widget-bg -->
             </div>
             <!-- /.widget-holder -->
-            <div class="widget-holder widget-sm col-md-6 widget-full-height">
+            <div class="widget-holder widget-sm col-md-4 widget-full-height">
                 <div class="widget-bg">
                     <div class="widget-body">
                         <div class="counter-w-info media">
                             <div class="media-body">
-                                <p class="text-muted mr-b-5">User</p><span class="counter-title color-pink"><span class="counter">11</span> </span>
+                                <p class="text-muted mr-b-5">Destination</p><span class="counter-title color-pink"><span class="counter">{{$destination}}</span> </span>
                                 <!-- /.counter-title -->
                                 <div style="margin-top: 15px"><span data-toggle="sparklines" data-height="15" data-bar-width="3" data-type="bar" data-chart-range-min="0" data-bar-spacing="5" data-bar-color="#ff6b88"><!-- 3,4,5,3,2,3,5,3,2,3,5,4,2 --></span>
                                 </div>
                             </div>
                             <!-- /.media-body -->
                             <div class="pull-right align-self-center"><i class="list-icon feather feather-user bg-pink"></i>
+                            </div>
+                        </div>
+                        <!-- /.counter-w-info -->
+                    </div>
+                    <!-- /.widget-body -->
+                </div>
+                <!-- /.widget-bg -->
+            </div>
+            <!-- /.widget-holder -->
+            <div class="widget-holder widget-sm col-md-4 widget-full-height">
+                <div class="widget-bg">
+                    <div class="widget-body">
+                        <div class="counter-w-info media">
+                            <div class="media-body">
+                                <p class="text-muted mr-b-5">Event</p><span class="counter-title color-info"><span class="counter">{{$event}}</span> </span>
+                                <!-- /.counter-title -->
+                                <div class="progress" style="width: 70%; position: relative; top: 25px">
+                                    <div class="progress-bar bg-info" style="width: 66%" role="progressbar"><span class="sr-only">20% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.media-body -->
+                            <div class="pull-right align-self-center"><i class="list-icon feather feather-award bg-info"></i>
                             </div>
                         </div>
                         <!-- /.counter-w-info -->

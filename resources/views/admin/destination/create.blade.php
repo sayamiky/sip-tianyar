@@ -88,12 +88,12 @@
                                         <div class="form-group">
                                             <label for="l39">Image</label>
                                             <br>
-                                            <input class="form-control @error('image') is-invalid @enderror" id="image"
-                                                name="image" type="file">
+                                            <input class="form-control @error('images') is-invalid @enderror" id="images"
+                                                name="images" type="file">
                                             <br><small class="text-muted">Max file size 5 MB</small>
-                                            @if ($errors->has('image'))
+                                            @if ($errors->has('images'))
                                                 <div class="invalid-feedback">
-                                                    {{ $errors->first('image') }}
+                                                    {{ $errors->first('images') }}
                                                 </div>
                                             @endif
                                         </div>

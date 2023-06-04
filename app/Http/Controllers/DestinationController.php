@@ -36,12 +36,20 @@ class DestinationController extends Controller
             'description' => 'string|required',
             'locations' => 'string|required',
             'location_url' => 'string|required',
-            'image' => 'mimetypes:image/jpg,image/png,image/jpeg|required|max:5000',
+            'images' => 'mimetypes:image/jpg,image/png,image/jpeg|required|max:5000'
+            // 'images' => ['array', 'min:1', 'required'],
+            // 'images.*' => ['mimetypes:image/jpg,image/png,image/jpeg|required|max:5000']
         ]);
 
-        Destination::create(array_merge($data, [
-            'image' => Storage::disk('local')->putFile('destination', $request['image']),
-        ]));
+        $destination = Destination::create($data);
+
+        // foreach ($request->file('images') as $image) {
+        $path = Storage::disk('local')->putFile('destination', $request['images']);
+        $destination->image()->create([
+            'destination_id' => $destination->id,
+            'image' => $path
+        ]);
+        // }
 
         return redirect()->route('destinations.index')->with('success', 'Data save successfully');
     }
@@ -49,9 +57,9 @@ class DestinationController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function show(Destination $blog)
+    public function show(Destination $destination)
     {
-        return view('admin.destination.edit', compact('blog'));
+        return view('admin.destination.edit', compact('destination'));
     }
 
     /**
@@ -61,19 +69,26 @@ class DestinationController extends Controller
     {
         $data = $request->validate([
             'name' => 'string|required',
-            'blog_category_id' => 'required|numeric',
             'description' => 'string|required',
             'locations' => 'string|required',
             'location_url' => 'string|required',
-            'image' => 'mimetypes:image/jpg,image/png,image/jpeg|sometimes|max:5000',
-            'status' => 'numeric|required'
+            'images' => 'mimetypes:image/jpg,image/png,image/jpeg|sometimes|max:5000'
         ]);
 
-        tap($destination)->update(array_merge($data, [
-            'image' => $request->image != null ? Storage::disk('local')->putFile('article', $request['image']) : $destination->image
-        ]));
+        tap($destination)->update($data);
 
-        return redirect()->route('blogs.index')->with('success', 'Data update successfully');
+        // foreach ($request->file('images') as $image) {
+        if ($request->image != null) {
+            $path = Storage::disk('local')->putFile('destination', $request['images']);
+            $destination->image()->create([
+                'destination_id' => $destination->id,
+                'image' => $path
+            ]);
+        }
+
+        // }
+
+        return redirect()->route('destinations.index')->with('success', 'Data update successfully');
     }
 
     /**
@@ -81,7 +96,8 @@ class DestinationController extends Controller
      */
     public function destroy(Destination $destination)
     {
+        $destination->image()->delete();
         $destination->delete();
-        return redirect()->route('blogs.index')->with('success', 'Data delete successfully');
+        return redirect()->route('destinations.index')->with('success', 'Data delete successfully');
     }
 }

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class EventController extends Controller
 {
@@ -11,7 +13,8 @@ class EventController extends Controller
      */
     public function index()
     {
-        //
+        $events = Event::all();
+        return view('admin.event.index', compact('events'));
     }
 
     /**
@@ -19,7 +22,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.event.create');
     }
 
     /**
@@ -27,38 +30,59 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $data = $request->validate([
+            'name' => 'string|required',
+            'date' => 'string|required',
+            'description' => 'string|required',
+            'locations' => 'string|required',
+            'location_url' => 'string|required',
+            'image' => 'mimetypes:image/jpg,image/png,image/jpeg|required|max:5000'
+        ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
+        Event::create(array_merge($data, [
+            'image' => Storage::disk('local')->putFile('event', $request['image']),
+            'date' => date('Y-m-d', strtotime($request->date))
+        ]));
+
+        return redirect()->route('events.index')->with('success', 'Data save successfully');
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function show(Event $event)
     {
-        //
+        return view('admin.event.edit', compact('event'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Event $event)
     {
-        //
+        $data = $request->validate([
+            'name' => 'string|required',
+            'date' => 'string|required',
+            'description' => 'string|required',
+            'locations' => 'string|required',
+            'location_url' => 'string|required',
+            'image' => 'mimetypes:image/jpg,image/png,image/jpeg|sometimes|max:5000',
+        ]);
+
+        tap($event)->update(array_merge($data, [
+            'image' => $request->image != null ? Storage::disk('local')->putFile('event', $request['image']) : $event->image,
+            'date' => date('Y-m-d', strtotime($request->date))
+        ]));
+
+        return redirect()->route('events.index')->with('success', 'Data update successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Event $event)
     {
-        //
+        $event->delete();
+        return redirect()->route('events.index')->with('success', 'Data delete successfully');
     }
 }
