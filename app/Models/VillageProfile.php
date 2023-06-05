@@ -13,4 +13,8 @@ class VillageProfile extends Model
     protected $fillable = [
         'description'
     ];
+
+    protected $casts = [
+        'description' => 'array'
+    ];
 }

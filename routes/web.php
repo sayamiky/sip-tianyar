@@ -41,7 +41,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::group(['prefix' => '/admin'], function () {
-        Route::get('/profiles', VillageProfileController::class)->name('profiles');
+        Route::apiResource('/profiles', VillageProfileController::class)->except('delete','show');
+        Route::get('/profile/create', [VillageProfileController::class, 'create'])->name('profiles.create');
+        // Route::get('/profiles/{profile}', [VillageProfileController::class, 'village'])->name('profiles.show');
         Route::apiResource('/blog-categories', BlogCategoryController::class);
         Route::apiResource('/blogs', BlogController::class);
         Route::get('/blog/create', [BlogController::class, 'create'])->name('blogs.create');

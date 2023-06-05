@@ -110,31 +110,22 @@
                     </a>
                     <div class="dropdown-menu dropdown-left dropdown-card dropdown-card-profile animated flipInY">
                         <div class="card">
-                            <header class="card-header d-flex mb-0"><a href="#" class="col-md-4 text-center"><i
-                                        class="feather feather-user-plus align-middle"></i> </a><a href="#"
-                                    class="col-md-4 text-center"><i class="feather feather-settings align-middle"></i>
+                            <header class="card-header d-flex mb-0">
+                                <a href="#" class="col-md-4 text-center">
+                                    <i class="feather feather-user-plus align-middle"></i>
                                 </a>
                                 <a href="#" class="col-md-4 text-center"><i
-                                        class="feather feather-power align-middle"></i>
+                                        class="feather feather-settings align-middle"></i>
+                                </a>
+
+                                <a class="col-md-4 text-center">
+                                    <form action="{{ route('logout') }}" method="POST">
+                                        @csrf
+                                        <button type="submit" style="border: none;"><i
+                                                class="feather feather-power align-middle"></i></button>
+                                    </form>
                                 </a>
                             </header>
-                            {{-- <ul class="list-unstyled card-body">
-                                    <li>
-                                        @if (Auth::guard('admin')->check())
-                                            <a href="{{ route('data.show', Auth::user()->id) }}"><span><span class="align-middle">Manage Accounts</span></span></a>
-                                        @else
-                                            <a href="{{ route('user.show', Auth::user()->id) }}"><span><span class="align-middle">Manage Accounts</span></span></a>
-                                        @endif
-                                    </li>
-                                    <li>
-                                        @if (Auth::guard('admin')->check())
-                                            <a href="{{ route('logoutz') }}"><span><span class="align-middle">Sign Out</span></span></a>
-                                        @else
-                                            <a href="{{ route('logouts') }}"><span><span class="align-middle">Sign Out</span></span></a>
-                                        @endif
-                                        
-                                    </li>
-                            </ul> --}}
                             <!-- /.card-body -->
                         </div>
                         <!-- /.card -->
@@ -156,8 +147,8 @@
                         <li><a href="{{ route('dashboard') }}"><i class="list-icon feather feather-command"></i>
                                 <span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li><a href="{{ route('dashboard') }}"><i class="list-icon feather feather-book"></i>
-                                <span class="hide-menu">Profile</span></a>
+                        <li><a href="{{ route('profiles.create') }}"><i class="list-icon feather feather-book"></i>
+                                <span class="hide-menu">Village Profile</span></a>
                         </li>
                         <li><a href="{{ route('blog-categories.index') }}"><i
                                     class="list-icon feather feather-folder"></i>
