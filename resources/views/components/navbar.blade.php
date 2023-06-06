@@ -2,9 +2,9 @@
         class="absolute top-0 left-0 z-40 flex items-center w-full bg-transparent ud-header">
         <div class="container">
             <div class="relative flex items-center justify-between -mx-4">
-                <div class="max-w-full px-4 w-60">
-                    <a href="/" class="block w-full py-5 navbar-logo">
-                        <img src="{{ asset('assets/web/images/logo/logo-white.svg') }}" alt="logo" class="w-full header-logo" />
+                <div class="w-20 max-w-full px-4">
+                    <a href="/" class="block w-4 h-4 py-5 navbar-logo">
+                        <img src="{{ asset('assets/web/images/logo/logo-white.png') }}" alt="logo" class="w-4 h-4 header-logo" />
                     </a>
                 </div>
                 <div class="flex items-center justify-between w-full px-4">
@@ -55,27 +55,27 @@
                                 <li class="relative group">
                                     <a href="#about"
                                         class="flex py-2 mx-8 text-base ud-menu-scroll text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0 lg:ml-7 xl:ml-12">
-                                        About
+                                        Seputar Desa
                                     </a>
                                 </li>
                                 <li class="relative group">
-                                    <a href="#pricing"
+                                    <a href="#features"
                                         class="flex py-2 mx-8 text-base ud-menu-scroll text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0 lg:ml-7 xl:ml-12">
-                                        Pricing
+                                        Destinasi Wisata
                                     </a>
                                 </li>
                                 <li class="relative group">
                                     <a href="#team"
                                         class="flex py-2 mx-8 text-base ud-menu-scroll text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0 lg:ml-7 xl:ml-12">
-                                        Team
+                                        Blog
                                     </a>
                                 </li>
-                                <li class="relative group">
+                                {{-- <li class="relative group">
                                     <a href="#contact"
                                         class="flex py-2 mx-8 text-base ud-menu-scroll text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0 lg:ml-7 xl:ml-12">
                                         Contact
                                     </a>
-                                </li>
+                                </li> --}}
                                 <li class="relative group submenu-item">
                                     <a href="javascript:void(0)"
                                         class="
@@ -104,7 +104,7 @@
                         after:-translate-y-1/2
                         after:mt-[-2px]
                       ">
-                                        Pages
+                                        Event
                                     </a>
                                     <div
                                         class="

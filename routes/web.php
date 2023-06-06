@@ -7,6 +7,8 @@ use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VillageProfileController;
+use App\Http\Controllers\Web\BlogController as WebBlogController;
+use App\Http\Controllers\Web\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,14 +22,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/blogs', function () {
-    return view('blog');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/blogs', [WebBlogController::class, 'index'])->name('blog.index');
 Route::get('/blogdetails', function () {
-    return view('blogdetail');
+    return view('web..blogdetail');
 });
 
 // Route::get('/dashboard', function () {

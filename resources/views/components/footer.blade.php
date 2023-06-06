@@ -4,7 +4,7 @@
             <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
                 <div class="w-full mb-10">
                     <a href="javascript:void(0)" class="inline-block max-w-[160px] mb-6">
-                        <img src="{{ asset('assets/web/images/logo/logo-white.svg')}}" alt="logo" class="max-w-full" />
+                        <img src="{{ asset('assets/web/images/logo/logo-white.png')}}" alt="logo" class="w-4 h-4 max-w-full" />
                     </a>
                     <p class="text-base text-[#f3f4fe] mb-7">
                         We create digital experiences for brands and companies by using
@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-2/12">
                 <div class="w-full mb-10">
                     <h4 class="text-lg font-semibold text-white mb-9">About Us</h4>
                     <ul>
@@ -97,7 +97,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-2/12">
                 <div class="w-full mb-10">
                     <h4 class="text-lg font-semibold text-white mb-9">Features</h4>
                     <ul>
@@ -152,7 +152,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-2/12">
                 <div class="w-full mb-10">
                     <h4 class="text-lg font-semibold text-white mb-9">
                         Our Products
@@ -309,10 +309,10 @@
                                 class="text-base text-[#f3f4fe] hover:text-primary px-3">
                                 Privacy policy
                             </a>
-                            <a href="javascript:void(0)"
+                            {{-- <a href="javascript:void(0)"
                                 class="text-base text-[#f3f4fe] hover:text-primary px-3">
                                 Legal notice
-                            </a>
+                            </a> --}}
                             <a href="javascript:void(0)"
                                 class="text-base text-[#f3f4fe] hover:text-primary px-3">
                                 Terms of service
@@ -324,9 +324,9 @@
                     <div class="flex justify-center my-1 md:justify-end">
                         <p class="text-base text-[#f3f4fe]">
                             Designed and Developed by
-                            <a href="https://tailgrids.com" rel="nofollow noopner" target="_blank"
+                            <a href="#" rel="nofollow noopner" target="_blank"
                                 class="text-primary hover:underline">
-                                TailGrids and UIdeck
+                                Kelompok 4
                             </a>
                         </p>
                     </div>

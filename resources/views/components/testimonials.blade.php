@@ -211,7 +211,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-wrap">
+        {{-- <div class="flex flex-wrap">
             <div class="w-full mx-4">
                 <div class="wow fadeInUp" data-wow-delay=".2s">
                     <div class="mb-8 ud-title">
@@ -256,6 +256,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>

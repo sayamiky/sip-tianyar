@@ -27,11 +27,11 @@
                 ">
                             Any Questions? Answered
                         </h2>
-                        <p
-                            class="text-lg leading-relaxed  sm:text-xl sm:leading-relaxed text-body-color">
+                        {{-- <p
+                            class="text-lg leading-relaxed sm:text-xl sm:leading-relaxed text-body-color">
                             There are many variations of passages of Lorem Ipsum available
                             but the majority have suffered alteration in some form.
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    How to use TailGrids?
+                                    Seberapa jauh dari Kota Karangasem?
                                 </h4>
                             </div>
                         </button>
@@ -127,7 +127,7 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    How to download icons from LineIcons?
+                                    Bagaimana kondisi jalanan disana ?
                                 </h4>
                             </div>
                         </button>
@@ -178,7 +178,7 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Is GrayGrids part of UIdeck?
+                                    Bisakah membawa kendaraan roda 4?
                                 </h4>
                             </div>
                         </button>
@@ -231,7 +231,7 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Can I use this template for commercial project?
+                                    Apakah ada masjid disana ?
                                 </h4>
                             </div>
                         </button>
@@ -282,7 +282,7 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Do you have plan to releasing Play Pro?
+                                    Berapa tarif masuk disana ?
                                 </h4>
                             </div>
                         </button>
@@ -333,7 +333,7 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Where and how to host this template?
+                                    Rekomendasi tempat makanan disana ?
                                 </h4>
                             </div>
                         </button>

@@ -23,9 +23,9 @@
               md:leading-snug
               mb-8
             ">
-                        Open-Source Web Template for SaaS, Startup, Apps, and More
+                        Selamat Datang di Desa Wisata Bugbug
                     </h1>
-                    <p
+                    {{-- <p
                         class="
               text-base
               sm:text-lg sm:leading-relaxed
@@ -37,8 +37,8 @@
             ">
                         Multidisciplinary Web Template Built with Your Favourite
                         Technology - HTML Bootstrap, Tailwind and React NextJS.
-                    </p>
-                    <ul class="flex flex-wrap items-center justify-center mb-10">
+                    </p> --}}
+                    {{-- <ul class="flex flex-wrap items-center justify-center mb-10">
                         <li>
                             <a href="https://links.tailgrids.com/play-download"
                                 class="inline-flex items-center justify-center px-6 py-4 text-base font-medium text-center transition duration-300 ease-in-out bg-white rounded-lg sm:px-10 text-dark hover:text-primary hover:shadow-lg">
@@ -57,8 +57,8 @@
                                 </span>
                             </a>
                         </li>
-                    </ul>
-                    <div class="text-center wow fadeInUp" data-wow-delay=".3s">
+                    </ul> --}}
+                    {{-- <div class="text-center wow fadeInUp" data-wow-delay=".3s">
                         <img src="{{ asset('assets/web/images/hero/brand.svg') }}" alt="image"
                             class="
                 max-w-[250px]
@@ -70,7 +70,7 @@
                 duration-300
                 ease-in-out
               " />
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 

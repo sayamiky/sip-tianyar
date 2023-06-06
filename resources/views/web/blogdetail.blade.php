@@ -1,18 +1,8 @@
-@extends('layouts.web.app')
-@section('content')
+<x-app-layout>
+  <x-navbar />
     <!-- ====== Banner Section Start -->
     <div
-      class="
-        relative
-        z-10
-        pt-[120px]
-        md:pt-[130px]
-        lg:pt-[160px]
-        pb-[100px]
-        bg-primary
-        overflow-hidden
-      "
-    >
+      class="relative z-10 pt-[120px] md:pt-[130px] lg:pt-[160px] pb-[100px] bg-primary overflow-hidden">
       <div class="container">
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full px-4">
@@ -117,7 +107,7 @@
                 class="object-cover object-center w-full h-full"
               />
               <div
-                class="absolute top-0 left-0 z-10 flex items-end w-full h-full  bg-gradient-to-t from-dark-700 to-transparent"
+                class="absolute top-0 left-0 z-10 flex items-end w-full h-full bg-gradient-to-t from-dark-700 to-transparent"
               >
                 <div class="flex flex-wrap items-center p-4 pb-4 sm:p-8">
                   <div class="flex items-center mb-4 mr-5 md:mr-10">
@@ -140,7 +130,7 @@
                   </div>
                   <div class="flex items-center mb-4">
                     <p
-                      class="flex items-center mr-5 text-sm font-medium text-white  md:mr-8"
+                      class="flex items-center mr-5 text-sm font-medium text-white md:mr-8"
                     >
                       <span class="mr-3">
                         <svg
@@ -182,7 +172,7 @@
                     </p>
 
                     <p
-                      class="flex items-center mr-5 text-sm font-medium text-white  md:mr-8"
+                      class="flex items-center mr-5 text-sm font-medium text-white md:mr-8"
                     >
                       <span class="mr-3">
                         <svg
@@ -248,7 +238,7 @@
                     Facing a challenge is kind of a turn-on for an easy rider
                   </h2>
                   <p
-                    class="mb-8 text-base leading-relaxed  text-body-color wow fadeInUp"
+                    class="mb-8 text-base leading-relaxed text-body-color wow fadeInUp"
                     data-wow-delay=".1s"
                   >
                     There's a time and place for everything… including asking
@@ -260,7 +250,7 @@
                     elements or Call To Actions.
                   </p>
                   <p
-                    class="mb-10 text-base leading-relaxed  text-body-color wow fadeInUp"
+                    class="mb-10 text-base leading-relaxed text-body-color wow fadeInUp"
                     data-wow-delay=".1s"
                   >
                     There's a time and place for everything… including asking
@@ -285,7 +275,7 @@
                     Sea no quidam vulputate
                   </h3>
                   <p
-                    class="mb-10 text-base leading-relaxed  text-body-color wow fadeInUp"
+                    class="mb-10 text-base leading-relaxed text-body-color wow fadeInUp"
                     data-wow-delay=".1s"
                   >
                     At quo cetero fastidii. Usu ex ornatus corpora sententiae,
@@ -435,7 +425,7 @@
                   </h3>
 
                   <p
-                    class="mb-8 text-base leading-relaxed  text-body-color wow fadeInUp"
+                    class="mb-8 text-base leading-relaxed text-body-color wow fadeInUp"
                     data-wow-delay=".1s"
                   >
                     At quo cetero fastidii. Usu ex ornatus corpora sententiae,
@@ -446,7 +436,7 @@
                     Erant appareat corrumpit ei vel.
                   </p>
                   <p
-                    class="text-base leading-relaxed  text-body-color mb-11 wow fadeInUp"
+                    class="text-base leading-relaxed text-body-color mb-11 wow fadeInUp"
                     data-wow-delay=".1s"
                   >
                     At quo cetero fastidii. Usu ex ornatus corpora sententiae,
@@ -460,24 +450,24 @@
                   <div class="flex flex-wrap items-center mb-12 -mx-4">
                     <div class="w-full px-4 md:w-1/2">
                       <div
-                        class="flex flex-wrap items-center mb-8  md:mb-0 wow fadeInUp"
+                        class="flex flex-wrap items-center mb-8 md:mb-0 wow fadeInUp"
                         data-wow-delay=".1s"
                       >
                         <a
                           href="javascript:void(0)"
-                          class="block px-5 py-2 mb-2 mr-2 text-xs font-medium rounded  bg-primary bg-opacity-5 text-primary md:mr-4 lg:mr-2 xl:mr-4 hover:bg-opacity-100 hover:text-white"
+                          class="block px-5 py-2 mb-2 mr-2 text-xs font-medium rounded bg-primary bg-opacity-5 text-primary md:mr-4 lg:mr-2 xl:mr-4 hover:bg-opacity-100 hover:text-white"
                         >
                           Design
                         </a>
                         <a
                           href="javascript:void(0)"
-                          class="block px-5 py-2 mb-2 mr-2 text-xs font-medium rounded  bg-primary bg-opacity-5 text-primary md:mr-4 lg:mr-2 xl:mr-4 hover:bg-opacity-100 hover:text-white"
+                          class="block px-5 py-2 mb-2 mr-2 text-xs font-medium rounded bg-primary bg-opacity-5 text-primary md:mr-4 lg:mr-2 xl:mr-4 hover:bg-opacity-100 hover:text-white"
                         >
                           Development
                         </a>
                         <a
                           href="javascript:void(0)"
-                          class="block px-5 py-2 mb-2 text-xs font-medium rounded  bg-primary bg-opacity-5 text-primary hover:bg-opacity-100 hover:text-white"
+                          class="block px-5 py-2 mb-2 text-xs font-medium rounded bg-primary bg-opacity-5 text-primary hover:bg-opacity-100 hover:text-white"
                         >
                           Info
                         </a>
@@ -956,7 +946,7 @@
                           <h4>
                             <a
                               href="javascript:void(0)"
-                              class="inline-block mb-1 text-lg font-medium leading-snug  lg:text-base xl:text-lg text-dark hover:text-primary"
+                              class="inline-block mb-1 text-lg font-medium leading-snug lg:text-base xl:text-lg text-dark hover:text-primary"
                             >
                               Create engaging online courses your student…
                             </a>
@@ -1000,7 +990,7 @@
                           <h4>
                             <a
                               href="javascript:void(0)"
-                              class="inline-block mb-1 text-lg font-medium leading-snug  lg:text-base xl:text-lg text-dark hover:text-primary"
+                              class="inline-block mb-1 text-lg font-medium leading-snug lg:text-base xl:text-lg text-dark hover:text-primary"
                             >
                               The ultimate formula for launching online course
                             </a>
@@ -1044,7 +1034,7 @@
                           <h4>
                             <a
                               href="javascript:void(0)"
-                              class="inline-block mb-1 text-lg font-medium leading-snug  lg:text-base xl:text-lg text-dark hover:text-primary"
+                              class="inline-block mb-1 text-lg font-medium leading-snug lg:text-base xl:text-lg text-dark hover:text-primary"
                             >
                               50 Best web design tips & tricks that will help
                               you
@@ -1091,7 +1081,7 @@
                           <h4>
                             <a
                               href="javascript:void(0)"
-                              class="inline-block mb-1 text-lg font-medium leading-snug  lg:text-base xl:text-lg text-dark hover:text-primary"
+                              class="inline-block mb-1 text-lg font-medium leading-snug lg:text-base xl:text-lg text-dark hover:text-primary"
                             >
                               The 8 best landing page builders, reviewed
                             </a>
@@ -1140,20 +1130,20 @@
                   <img
                     src="{{ asset('assets/web/images/blog/blog-01.jpg') }}"
                     alt="image"
-                    class="w-full transition  group-hover:scale-125 group-hover:rotate-6"
+                    class="w-full transition group-hover:scale-125 group-hover:rotate-6"
                   />
                 </a>
               </div>
               <div>
                 <span
-                  class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded  bg-primary"
+                  class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary"
                 >
                   Dec 22, 2023
                 </span>
                 <h3>
                   <a
                     href="blog-details.html"
-                    class="inline-block mb-4 text-xl font-semibold  sm:text-2xl lg:text-xl xl:text-2xl text-dark hover:text-primary"
+                    class="inline-block mb-4 text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl text-dark hover:text-primary"
                   >
                     Meet AutoManage, the best AI management tools
                   </a>
@@ -1172,20 +1162,20 @@
                   <img
                     src="{{ asset('assets/web/images/blog/blog-02.jpg') }}"
                     alt="image"
-                    class="w-full transition  group-hover:scale-125 group-hover:rotate-6"
+                    class="w-full transition group-hover:scale-125 group-hover:rotate-6"
                   />
                 </a>
               </div>
               <div>
                 <span
-                  class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded  bg-primary"
+                  class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary"
                 >
                   Mar 15, 2023
                 </span>
                 <h3>
                   <a
                     href="blog-details.html"
-                    class="inline-block mb-4 text-xl font-semibold  sm:text-2xl lg:text-xl xl:text-2xl text-dark hover:text-primary"
+                    class="inline-block mb-4 text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl text-dark hover:text-primary"
                   >
                     How to earn more money as a wellness coach
                   </a>
@@ -1204,20 +1194,20 @@
                   <img
                     src="{{ asset('assets/web/images/blog/blog-03.jpg') }}"
                     alt="image"
-                    class="w-full transition  group-hover:scale-125 group-hover:rotate-6"
+                    class="w-full transition group-hover:scale-125 group-hover:rotate-6"
                   />
                 </a>
               </div>
               <div>
                 <span
-                  class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded  bg-primary"
+                  class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary"
                 >
                   Jan 05, 2023
                 </span>
                 <h3>
                   <a
                     href="blog-details.html"
-                    class="inline-block mb-4 text-xl font-semibold  sm:text-2xl lg:text-xl xl:text-2xl text-dark hover:text-primary"
+                    class="inline-block mb-4 text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl text-dark hover:text-primary"
                   >
                     The no-fuss guide to upselling and cross selling
                   </a>
@@ -1233,4 +1223,6 @@
       </div>
     </section>
     <!-- ====== Blog Details Section End -->
-@endsection
+
+  <x-footer />
+</x-app-layout>
