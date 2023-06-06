@@ -6,7 +6,7 @@
             <div class="flex flex-wrap items-center -mx-4">
                 <div class="w-full px-4">
                     <div class="text-center">
-                        <h1 class="text-4xl font-semibold text-white">Articles</h1>
+                        <h1 class="text-4xl font-semibold text-white">Tradisi</h1>
                     </div>
                 </div>
             </div>
@@ -36,16 +36,16 @@
     </div>
     <!-- ====== Banner Section End -->
 
-    <!-- ====== article Section Start -->
+    <!-- ====== event Section Start -->
     <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20">
         <div class="container">
             <div class="flex flex-wrap -mx-4">
-                @foreach ($blogs as $article)
+                @foreach ($events as $event)
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3">
                         <div class="mb-10 group wow fadeInUp" data-wow-delay=".1s">
                             <div class="mb-8 overflow-hidden rounded">
-                                <a href="/articles/{{ $article->id }}" class="block">
-                                    <img src="{{ asset('storage/' . $article->image) }}" alt="image"
+                                <a href="/traditions/{{ $event->id }}" class="block">
+                                    <img src="{{ asset('storage/' . $event->image) }}" alt="image"
                                         class="object-cover w-[500px] h-[250px] transition group-hover:scale-125 group-hover:rotate-6"
                                         style="
                                 width: 500px;
@@ -56,16 +56,16 @@
                             <div>
                                 <span
                                     class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary">
-                                    {{ Carbon\Carbon::parse($article->created_at)->diffForHumans() }}
+                                    {{ Carbon\Carbon::parse($event->created_at)->diffForHumans() }}
                                 </span>
                                 <h3>
-                                    <a href="/articles/{{ $article->id }}"
+                                    <a href="/traditions/{{ $event->id }}"
                                         class="inline-block mb-4 text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl text-dark hover:text-primary">
-                                        {{ $article->name }}
+                                        {{ $event->name }}
                                     </a>
                                 </h3>
                                 <p class="text-base text-body-color">
-                                    {{ substr($article->description, 0, 50) }}
+                                    {{ substr($event->description, 0, 50) }}
                                 </p>
                             </div>
                         </div>

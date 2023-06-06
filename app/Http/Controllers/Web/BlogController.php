@@ -13,4 +13,9 @@ class BlogController extends Controller
         $blogs = Blog::all();
         return view('web.blog',compact('blogs'));
     }
+    public function show(Blog $article)
+    {
+        $articles = Blog::take(4)->get();
+        return view('web.blogdetail', compact('article','articles'));
+    }
 }

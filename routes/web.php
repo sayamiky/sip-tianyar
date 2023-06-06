@@ -8,6 +8,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VillageProfileController;
 use App\Http\Controllers\Web\BlogController as WebBlogController;
+use App\Http\Controllers\Web\EventController as WebEventController;
 use App\Http\Controllers\Web\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,10 +27,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('index');
 // });
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/blogs', [WebBlogController::class, 'index'])->name('blog.index');
-Route::get('/blogdetails', function () {
-    return view('web..blogdetail');
-});
+Route::resource('/articles', WebBlogController::class);
+Route::resource('/traditions', WebEventController::class);
+// Route::get('/blogdetails', function () {
+//     return view('web.blogdetail');
+// });
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

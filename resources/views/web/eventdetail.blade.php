@@ -7,7 +7,7 @@
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full px-4">
             <div class="text-center">
-              <h1 class="text-4xl font-semibold text-white">Article Details</h1>
+              <h1 class="text-4xl font-semibold text-white">Tradition Details</h1>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@
               "
             >
               <img
-                src="{{ asset('storage/' . $article->image) }}"
+                src="{{ asset('storage/' . $tradition->image) }}"
                 alt="image"
                 class="object-cover object-center w-full h-full"
               />
@@ -113,7 +113,7 @@
                   <div class="flex items-center mb-4 mr-5 md:mr-10">
                     <div class="w-10 h-10 mr-4 overflow-hidden rounded-full">
                       <img
-                        src="{{ asset('storage/' . $article->image) }}"
+                        src="{{ asset('storage/' . $tradition->image) }}"
                         alt="image"
                         class="w-full"
                       />
@@ -187,13 +187,13 @@
                     data-wow-delay=".1s
                     "
                   >
-                    {{ $article->name }}
+                    {{ $tradition->name }}
                   </h2>
                   <p
                     class="mb-8 text-base leading-relaxed text-body-color wow fadeInUp"
                     data-wow-delay=".1s"
                   >
-                    {!! $article->description !!}
+                    {!! $tradition->description !!}
                   </p>
                   
 
@@ -203,12 +203,12 @@
                         class="flex flex-wrap items-center mb-8 md:mb-0 wow fadeInUp"
                         data-wow-delay=".1s"
                       >
-                        <a
+                        {{-- <a
                           href="javascript:void(0)"
                           class="block px-5 py-2 mb-2 mr-2 text-xs font-medium rounded bg-primary bg-opacity-5 text-primary md:mr-4 lg:mr-2 xl:mr-4 hover:bg-opacity-100 hover:text-white"
                         >
-                          {{ $article->category->name }}
-                        </a>
+                          {{ $tradition->category->name }}
+                        </a> --}}
                       </div>
                     </div>
                     <div class="w-full px-4 md:w-1/2">
@@ -642,13 +642,13 @@
                         data-wow-delay=".1s
                         "
                       >
-                        Popular Articles
+                        Popular traditions
                       </h2>
                       <span
                         class="h-[2px] bg-primary w-20 mb-10 inline-block"
                       ></span>
                     </div>
-                    @foreach ($articles as $article)
+                    @foreach ($traditions as $tradition)
                     <div class="w-full px-4 md:w-1/2 lg:w-full">
                       <div
                         class="
@@ -683,13 +683,13 @@
                         <div class="w-full">
                           <h4>
                             <a
-                            href="/articles/{{ $article->id }}"
+                            href="/traditions/{{ $tradition->id }}"
                               class="inline-block mb-1 text-lg font-medium leading-snug lg:text-base xl:text-lg text-dark hover:text-primary"
                             >
-                              {{ $article->name }}
+                              {{ $tradition->name }}
                             </a>
                           </h4>
-                          <p class="text-sm text-body-color">{{ substr($article->description, 0, 50) }}</p>
+                          <p class="text-sm text-body-color">{{ substr($tradition->description, 0, 50) }}</p>
                         </div>
                       </div>
                     </div>
@@ -714,7 +714,7 @@
                 relative
               "
             >
-              Related Articles
+              Related traditions
             </h2>
             <span class="h-[2px] bg-primary w-20 mb-10 inline-block"></span>
           </div>
