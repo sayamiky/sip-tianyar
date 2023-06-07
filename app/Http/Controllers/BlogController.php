@@ -45,6 +45,7 @@ class BlogController extends Controller
 
         Blog::create(array_merge($data, [
             'image' => Storage::disk('local')->putFile('article', $request['image']),
+            'slug' => str()->slug($request->name)
         ]));
 
         return redirect()->route('blogs.index')->with('success', 'Data save successfully');

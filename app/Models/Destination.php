@@ -12,6 +12,7 @@ class Destination extends Model
     protected $table = "destinations";
     protected $fillable = [
         'name',
+        'slug',
         'description',
         'locations',
         'location_url'

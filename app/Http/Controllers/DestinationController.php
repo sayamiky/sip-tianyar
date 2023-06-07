@@ -41,7 +41,9 @@ class DestinationController extends Controller
             // 'images.*' => ['mimetypes:image/jpg,image/png,image/jpeg|required|max:5000']
         ]);
 
-        $destination = Destination::create($data);
+        $destination = Destination::create(array_merge($data, [
+            'slug' => str()->slug($request->name)
+        ]));
 
         // foreach ($request->file('images') as $image) {
         $path = Storage::disk('local')->putFile('destination', $request['images']);

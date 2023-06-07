@@ -41,7 +41,8 @@ class EventController extends Controller
 
         Event::create(array_merge($data, [
             'image' => Storage::disk('local')->putFile('event', $request['image']),
-            'date' => date('Y-m-d', strtotime($request->date))
+            'date' => date('Y-m-d', strtotime($request->date)),
+            'slug' => str()->slug($request->name)
         ]));
 
         return redirect()->route('events.index')->with('success', 'Data save successfully');
