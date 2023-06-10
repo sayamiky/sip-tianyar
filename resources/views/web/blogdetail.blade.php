@@ -1,4 +1,13 @@
 <x-app-layout>
+  <style>
+        .truncate-lines {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2; /* Number of lines to show */
+        }
+    </style>
   <x-navbar />
     <!-- ====== Banner Section Start -->
     <div
@@ -689,7 +698,10 @@
                               {{ $article->name }}
                             </a>
                           </h4>
-                          <p class="text-sm text-body-color">{{ substr($article->description, 0, 50) }}</p>
+                          <div class="text-sm truncate-lines text-body-color">
+                            {!! $article->description !!}
+                        </div>
+                         
                         </div>
                       </div>
                     </div>

@@ -76,16 +76,13 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Seberapa jauh dari Kota Karangasem?
+                                    Seberapa jauh Desa Adat Bugbug Karangasem dari Kota Karangasem?
                                 </h4>
                             </div>
                         </button>
                         <div class="faq-content pl-[62px] hidden">
                             <p class="py-3 text-base leading-relaxed text-body-color">
-                                It takes 2-3 weeks to get your first blog post ready. That
-                                includes the in-depth research & creation of your monthly
-                                content marketing strategy that we do before writing your
-                                first blog post, Ipsum available .
+                                Desa Adat Bugbug Karangasem terletak sekitar 11 kilometer (7 mil) dari pusat Kota Karangasem. Perjalanan dari Kota Karangasem ke desa ini biasanya memakan waktu sekitar 30-40 menit tergantung kondisi lalu lintas.
                             </p>
                         </div>
                     </div>
@@ -127,16 +124,13 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Bagaimana kondisi jalanan disana ?
+                                    Bagaimana kondisi jalan di Desa Adat Bugbug Karangasem?
                                 </h4>
                             </div>
                         </button>
                         <div class="faq-content pl-[62px] hidden">
                             <p class="py-3 text-base leading-relaxed text-body-color">
-                                It takes 2-3 weeks to get your first blog post ready. That
-                                includes the in-depth research & creation of your monthly
-                                content marketing strategy that we do before writing your
-                                first blog post, Ipsum available .
+                                Kondisi jalan di Desa Adat Bugbug Karangasem umumnya baik. Jalan-jalan utama yang menghubungkan desa dengan kota-kota terdekat telah diperbaiki dan diaspal. Namun, ada juga beberapa jalan setapak di daerah pedesaan yang mungkin lebih bergelombang atau berbatu.
                             </p>
                         </div>
                     </div>
@@ -178,16 +172,13 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Bisakah membawa kendaraan roda 4?
+                                    Bagaimana akses transportasi umum di Desa Adat Bugbug Karangasem?
                                 </h4>
                             </div>
                         </button>
                         <div class="faq-content pl-[62px] hidden">
                             <p class="py-3 text-base leading-relaxed text-body-color">
-                                It takes 2-3 weeks to get your first blog post ready. That
-                                includes the in-depth research & creation of your monthly
-                                content marketing strategy that we do before writing your
-                                first blog post, Ipsum available .
+                                Desa Adat Bugbug Karangasem memiliki akses transportasi umum yang terbatas. Angkutan umum seperti bus atau minibus tidak terlalu sering melewati desa ini. Sebaiknya menggunakan taksi atau ojek online, atau menyewa kendaraan pribadi untuk mobilitas yang lebih mudah di sekitar desa.
                             </p>
                         </div>
                     </div>
@@ -231,16 +222,13 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Apakah ada masjid disana ?
+                                    Apakah parkir tersedia di sepanjang jalanan Desa Adat Bugbug Karangasem?
                                 </h4>
                             </div>
                         </button>
                         <div class="faq-content pl-[62px] hidden">
                             <p class="py-3 text-base leading-relaxed text-body-color">
-                                It takes 2-3 weeks to get your first blog post ready. That
-                                includes the in-depth research & creation of your monthly
-                                content marketing strategy that we do before writing your
-                                first blog post, Ipsum available .
+                                Ya, tersedia area parkir di sepanjang jalanan di Desa Adat Bugbug Karangasem. Biasanya terdapat area parkir di dekat tempat-tempat wisata, pura, atau tempat-tempat populer lainnya. Pastikan untuk mengikuti tanda-tanda parkir yang ada dan mematuhi peraturan yang berlaku.
                             </p>
                         </div>
                     </div>
@@ -282,16 +270,13 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Berapa tarif masuk disana ?
+                                    Apakah ada rental sepeda atau sepeda motor di Desa Adat Bugbug Karangasem?
                                 </h4>
                             </div>
                         </button>
                         <div class="faq-content pl-[62px] hidden">
                             <p class="py-3 text-base leading-relaxed text-body-color">
-                                It takes 2-3 weeks to get your first blog post ready. That
-                                includes the in-depth research & creation of your monthly
-                                content marketing strategy that we do before writing your
-                                first blog post, Ipsum available .
+                                Ya, ada beberapa tempat rental sepeda atau sepeda motor di Desa Adat Bugbug Karangasem. Anda dapat menyewa sepeda atau sepeda motor untuk menjelajahi desa dan sekitarnya dengan lebih fleksibel. Pastikan untuk memiliki SIM yang sah jika ingin menyewa sepeda motor.
                             </p>
                         </div>
                     </div>
@@ -333,16 +318,13 @@
                             </div>
                             <div class="w-full">
                                 <h4 class="text-base font-semibold text-black sm:text-lg">
-                                    Rekomendasi tempat makanan disana ?
+                                    Apa makanan khas yang dapat dicoba di Desa Adat Bugbug Karangasem?
                                 </h4>
                             </div>
                         </button>
                         <div class="faq-content pl-[62px] hidden">
                             <p class="py-3 text-base leading-relaxed text-body-color">
-                                It takes 2-3 weeks to get your first blog post ready. That
-                                includes the in-depth research & creation of your monthly
-                                content marketing strategy that we do before writing your
-                                first blog post, Ipsum available .
+                                Desa Adat Bugbug Karangasem memiliki beberapa makanan khas yang lezat. Salah satunya adalah "Sate Lilit", yaitu sate yang terbuat dari daging ikan cincang yang dibumbui dengan rempah khas Bali. Anda juga dapat mencicipi "Nasi Jinggo", nasi kecil yang dibungkus daun pisang dan disajikan dengan lauk-pauk khas Bali.
                             </p>
                         </div>
                     </div>

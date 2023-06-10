@@ -44,10 +44,30 @@
             </div>
             <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-2/12">
                 <div class="w-full mb-10">
+                    <h4 class="text-lg font-semibold text-white mb-9"></h4>
+                    
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-2/12">
+                <div class="w-full mb-10">
+                    <h4 class="text-lg font-semibold text-white mb-9"></h4>
+                    
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-2/12">
+                <div class="w-full mb-10">
+                    <h4 class="text-lg font-semibold text-white mb-9">
+                        
+                    </h4>
+                    
+                </div>
+            </div>
+            <div class="w-full px-4 lg:py-12 md:w-2/3 lg:w-6/12 xl:w-3/12">
+                <div class="w-full mb-10">
                     <h4 class="text-lg font-semibold text-white mb-9">About Us</h4>
                     <ul>
                         <li>
-                            <a href="javascript:void(0)"
+                            <a href="/#home"
                                 class="
                   inline-block
                   text-base text-[#f3f4fe]
@@ -59,7 +79,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"
+                            <a href="/#about"
                                 class="
                   inline-block
                   text-base text-[#f3f4fe]
@@ -67,11 +87,11 @@
                   leading-loose
                   mb-2
                 ">
-                                Features
+                                Seputer Desa
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"
+                            <a href="/#features"
                                 class="
                   inline-block
                   text-base text-[#f3f4fe]
@@ -79,140 +99,9 @@
                   leading-loose
                   mb-2
                 ">
-                                About
+                                Destinasi Wisata
                             </a>
                         </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="
-                  inline-block
-                  text-base text-[#f3f4fe]
-                  hover:text-primary
-                  leading-loose
-                  mb-2
-                ">
-                                Testimonial
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-2/12">
-                <div class="w-full mb-10">
-                    <h4 class="text-lg font-semibold text-white mb-9">Features</h4>
-                    <ul>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="
-                  inline-block
-                  text-base text-[#f3f4fe]
-                  hover:text-primary
-                  leading-loose
-                  mb-2
-                ">
-                                How it works
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="
-                  inline-block
-                  text-base text-[#f3f4fe]
-                  hover:text-primary
-                  leading-loose
-                  mb-2
-                ">
-                                Privacy policy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="
-                  inline-block
-                  text-base text-[#f3f4fe]
-                  hover:text-primary
-                  leading-loose
-                  mb-2
-                ">
-                                Terms of Service
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="
-                  inline-block
-                  text-base text-[#f3f4fe]
-                  hover:text-primary
-                  leading-loose
-                  mb-2
-                ">
-                                Refund policy
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-2/12">
-                <div class="w-full mb-10">
-                    <h4 class="text-lg font-semibold text-white mb-9">
-                        Our Products
-                    </h4>
-                    <ul>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="
-                  inline-block
-                  text-base text-[#f3f4fe]
-                  hover:text-primary
-                  leading-loose
-                  mb-2
-                ">
-                                LineIcons
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="
-                  inline-block
-                  text-base text-[#f3f4fe]
-                  hover:text-primary
-                  leading-loose
-                  mb-2
-                ">
-                                Ecommerce HTML
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="
-                  inline-block
-                  text-base text-[#f3f4fe]
-                  hover:text-primary
-                  leading-loose
-                  mb-2
-                ">
-                                Ayro UI
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="
-                  inline-block
-                  text-base text-[#f3f4fe]
-                  hover:text-primary
-                  leading-loose
-                  mb-2
-                ">
-                                PlainAdmin
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
-                <div class="w-full mb-10">
-                    <h4 class="text-lg font-semibold text-white mb-9">Partners</h4>
-                    <ul class="flex flex-wrap items-center">
                         <li>
                             
                         </li>

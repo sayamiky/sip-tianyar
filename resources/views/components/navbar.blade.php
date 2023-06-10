@@ -47,20 +47,20 @@
                 ">
                         <ul class="blcok lg:flex">
                             <li class="relative group">
-                                <a href="#home"
-                                    class="flex py-2 mx-8 text-base ud-menu-scroll text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0">
+                                <a href="/#home"
+                                    class="flex py-2 mx-8 text-base text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0">
                                     Home
                                 </a>
                             </li>
                             <li class="relative group">
-                                <a href="#about"
-                                    class="flex py-2 mx-8 text-base ud-menu-scroll text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0 lg:ml-7 xl:ml-12">
+                                <a href="/#about"
+                                    class="flex py-2 mx-8 text-base text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0 lg:ml-7 xl:ml-12">
                                     Seputar Desa
                                 </a>
                             </li>
                             <li class="relative group">
-                                <a href="#features"
-                                    class="flex py-2 mx-8 text-base ud-menu-scroll text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0 lg:ml-7 xl:ml-12">
+                                <a href="/#features"
+                                    class="flex py-2 mx-8 text-base text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary lg:py-6 lg:inline-flex lg:px-0 lg:mr-0 lg:ml-7 xl:ml-12">
                                     Destinasi Wisata
                                 </a>
                             </li>
@@ -80,7 +80,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="justify-end hidden pr-16 sm:flex lg:pr-0">
+                {{-- <div class="justify-end hidden pr-16 sm:flex lg:pr-0">
                     <a href="/login" class="py-3 text-base font-medium text-white hover:opacity-70 px-7 loginBtn">
                         Sign In
                     </a>
@@ -88,7 +88,7 @@
                         class="px-6 py-3 text-base font-medium text-white duration-300 ease-in-out bg-white rounded-lg bg-opacity-20 hover:bg-opacity-100 hover:text-dark signUpBtn">
                         Sign Up
                     </a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
